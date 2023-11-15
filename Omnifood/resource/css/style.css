@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #404040;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-family: "lato" ,"arial",sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+a:link,
+a:visited{
+    color: #a87631;
+    text-decoration: none;
+    border-bottom: 1px solid #a87631;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s;
+}
+a:hover,
+a:active{
+    border-bottom: 1px solid transparent;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1140px;
+    transform: translate(-50%, -50%);
+}
+h1, h2, h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+}
+h2:after{
+    height: 2px;
+    background-color: #a87631;
+    display: block;
+    content: " ";
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 150px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #a87631;
+    margin-right: 15px;
+    border: 1px solid #a87631;
+    color: #fff;
+}
+.btn-border:link,
+.btn-border:visited{
+    border: 1px solid #a87631;
+    color: #a87631;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #7e5823;
+}
+.btn-full:hover,
+.btn-full:active,
+{
+    border: 1px solid #7e5823;
+}
+.btn-border:hover,
+.btn-border:active {
+    background-color: 1px solid #7e5823;
+    color: #fff;
+}
+.row{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.logo-white
+ {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #a87631;
+}
+section{
+    padding: 80px 0;
+}
+.feature-text{
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+    margin-top: 15px;
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+.icon-big{
+    font-size: 225%;
+    color: #a87631;
+    margin-bottom: 15px;
+    display: block;
+}
+.section-meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+    
+}
+.meals-showcase li{
+    display: block;
+    width: 25%;
+    float: left;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1.0;
+}
+.section-works{
+    background-color: #efefef;
+}
+.phone-image{
+    width: 40%;
+/*    text-align: right;*/
+}
+.app-image img{
+    height: 50px;
+    width: auto;
+/*    margin-top: 20px;*/
+}
+.app-image:link,
+.app-image:visited{
+    border: 0;
+}
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 50px;
+}
+.work-steps{
+    margin-bottom: 60px;
+}
+.work-steps div{
+    color: #a87631;
+    border: 1px solid #a87631;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    font-size: 120%;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-right: 15px;
+}
+.work-steps:last-of-type{
+    margin-bottom: 70px;
+}
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.cities-steps{
+    margin-bottom: 10px;
+}
+.icon-small{
+    color: #a87631;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 120%;
+    vertical-align: middle;
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 15px;
+}
+blockquote:before{
+    content: "\201C" ;
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+}
+cite{
+    display: block;
+    margin-top: 10px;
+    font-size: 90%;
+}
+cite img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.section-plans{
+background-color: #dedede;
+}
+.plan-box{
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5%;
+    box-shadow: 5px 5px 5px #a5a5a5;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #b9b9b9;
+}
+.per-month{
+    font-size: 300%;
+    font-weight: 100;
+    color: #a87631;
+    margin-bottom: 10px;
+}
+.per-month span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.per-meal{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:first-child{
+    background-color: #e0e0e0;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;  
+}
+.contact-form{
+    width: 80%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,textarea
+{
+    width: 100%;
+    padding: 3px;
+}
+textarea{
+    height: 120px;
+}
+*:focus{
+    outline: none;
+}
+footer{
+    background-color: #4a4a4a;
+    padding: 40px;
+}
+.footer-navs{
+    list-style: none;
+    float: left;
+    
+}
+.social-navs{
+    float: right;
+    list-style: none;
+}
+.footer-navs li,
+.social-navs li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-navs li a:link,
+.footer-navs li a:visited,
+.social-navs li a:link,
+.social-navs li a:visited{
+    text-decoration: none;
+    border-bottom: 0;
+    color: #767676;
+    transition: color 0.2s;
+}
+.footer-navs li a:hover,
+.footer-navs li a:active,
+.social-navs li a:hover,
+.social-navs li a:active{
+    color: #b1b1b1
+}
+footer p{
+    color: #767676;
+    text-align: center;
+    margin-top: 15px;
+}
+.social-navs li a:link,
+.social-navs li a:visited{
+    font-size: 150%;
+}
+.ion-social-facebook:hover,
+.ion-social-facebook:active{
+    color: #3b5998;
+}
+.ion-social-twitter:hover,
+.ion-social-twitter:active{
+    color: #1DA1F2;
+}
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active{
+    color: #db4a39;
+}
+.ion-social-instagram-outline:hover,
+.ion-social-instagram-outline:active{
+    color: 	#833AB4;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(252, 246, 246, 0.98);
+    box-shadow: 0px 2px 2px #bfbfbf;
+    z-index: 9999;
+}
+.sticky .logo-white{
+    display: none;
+}
+.sticky .logo-black{
+    display: block;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 18px 0;
+    color: #404040;
+}
+.sticky .main-nav{
+    
+    margin-top: 15px;
+}
+.js--features-animate,
+.js--cities-animate,
+.js--phone-animate
+{
+    opacity: 0;
+    animation-duration: 1s;
+}
+.js--features-animate.animated,
+.js--cities-animate.animated,
+.js--phone-animate.animated{
+    opacity: 1;
+}
+.js--plan-animate{
+    animation-duration: 1s;
+}
